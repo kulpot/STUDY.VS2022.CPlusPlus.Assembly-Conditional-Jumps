@@ -11,6 +11,7 @@ doit proc
 	; this is a comment i can type whatever i like after a semicolon and assembler will ignore it
 	
 	; --------- Assembly Conditional Jumps -------------
+	; Compare Instructions(cmp) --- sign (1(negative) 0(Positive)), zero (1(0value) 0(not0value))
 
 	mov eax, 0
 doItAgain:
