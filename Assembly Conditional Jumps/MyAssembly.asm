@@ -17,7 +17,9 @@ doit proc
 doItAgain:
 	inc eax
 	cmp eax, 5
-	jmp doItAgain		; jmp -- unconditional branch(upward)
+	;jmp doItAgain		; jmp -- unconditional branch(upward)
+	;jl doItAgain		; conditional branch(upward) jl -- jump less than	; cmp eax, 5 ; 5-5=0 
+	jge doItAgain		; jge - jump greaterthanequalto
 
 	ret
 
