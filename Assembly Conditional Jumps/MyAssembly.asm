@@ -12,6 +12,7 @@ doit proc
 	
 	; --------- Assembly Conditional Jumps -------------
 	; Compare Instructions(cmp) --- sign (1(negative) 0(Positive)), zero (1(0value) 0(not0value))
+	; Critical Point -- cmp must be above of a conditional branch example jl
 
 	mov eax, 0
 doItAgain:
@@ -19,7 +20,7 @@ doItAgain:
 	cmp eax, 5
 	;jmp doItAgain		; jmp -- unconditional branch(upward)
 	;jl doItAgain		; conditional branch(upward) jl -- jump less than	; cmp eax, 5 ; 5-5=0 
-	jge doItAgain		; jge - jump greaterthanequalto
+	jge doItAgain		; jge - jump greaterthanequalto -- conditional branch(upward)
 
 	ret
 
