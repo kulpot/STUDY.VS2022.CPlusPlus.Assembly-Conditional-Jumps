@@ -15,7 +15,8 @@ doit proc
 	mov eax, 0
 doItAgain:
 	inc eax
-	jmp doItAgain
+	cmp eax, 5
+	jmp doItAgain		; jmp -- unconditional branch(upward)
 
 	ret
 
