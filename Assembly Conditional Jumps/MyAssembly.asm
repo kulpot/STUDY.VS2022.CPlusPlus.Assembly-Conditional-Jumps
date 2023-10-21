@@ -12,10 +12,10 @@ doit proc
 	
 	; --------- Assembly Conditional Jumps -------------
 
-
-
-
-
+	mov eax, 0
+doItAgain:
+	inc eax
+	jmp doItAgain
 
 	ret
 
